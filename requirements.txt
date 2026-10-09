@@ -1,0 +1,4 @@
+# Versions testees et validees
+markitdown[pdf,docx,pptx,xlsx]==0.1.5
+pymupdf4llm==1.28.2
+pymupdf==1.28.2

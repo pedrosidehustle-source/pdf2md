@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1 - Convertir entree/ en markdown",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["to_md.py"],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "2 - Convertir en UN SEUL fichier",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["to_md.py", "--fusion", "Dossier.md"],
+      "presentation": { "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "3 - Convertir sans OCR (rapide)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["to_md.py", "--ocr", "jamais"],
+      "presentation": { "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "4 - Forcer l'OCR sur tout",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": ["to_md.py", "--ocr", "toujours"],
+      "presentation": { "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+tessdata/
+out/
+entree/*
+!entree/_LISEZ-MOI.txt
